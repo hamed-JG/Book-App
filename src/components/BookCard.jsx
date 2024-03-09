@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiFillHeart } from "react-icons/ai";
+import { FaStar } from "react-icons/fa";
 
 import styles from "./BookCard.module.css";
 
@@ -23,7 +23,7 @@ function BookCard({ data, handleLikedList }) {
         </div>
       </div>
       <button onClick={likeHandler}>
-        <AiFillHeart color={like ? "red" : "#e0e0e0"} fontSize="1.8rem" />
+        <FaStar color={like ? "yellow" : "#e0e0e0"} fontSize="1.5rem" />
       </button>
     </div>
   );
